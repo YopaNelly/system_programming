@@ -19,6 +19,25 @@ Create a directory for your kernel module and navigate into it:
 mkdir ~/kernel_module
 cd ~/kernel_module
 ```
+Install the Required GCC Version: Install GCC version 12 to match the compiler used to build your kernel.
+
+```bash
+
+sudo apt install gcc-12
+```
+Update Alternatives (if necessary): Ensure your system uses the correct GCC version. You might need to update the alternatives system to use GCC 12.
+
+```bash
+
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 12
+```
+Verify the GCC Version: Check if the correct GCC version is being used.
+
+```bash
+
+gcc --version
+```
+You should see output indicating that GCC 12 is being used.
 Now, create the source file helloworld.c:
 
 ```bash
