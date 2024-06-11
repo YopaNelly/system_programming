@@ -35,7 +35,7 @@ Inside helloworld.c, paste the following code:
 #include <linux/kernel.h>
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Your Name");
+MODULE_AUTHOR("Yopa Nelly");
 MODULE_DESCRIPTION("A simple Hello World LKM");
 MODULE_VERSION("0.1");
 
